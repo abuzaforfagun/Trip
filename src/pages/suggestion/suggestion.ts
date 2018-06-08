@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
@@ -13,13 +13,23 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   selector: 'page-suggestion',
   templateUrl: 'suggestion.html',
 })
-export class SuggestionPage {
+export class SuggestionPage implements OnInit {
 
+  
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SuggestionPage');
   }
+
+  ngOnInit(): void {
+    $(".toggle_bar").click(function(){
+	    $(".toggl_view").animate({
+	      width: "toggle"
+	    });
+	  });
+  }
+  
 
 }
