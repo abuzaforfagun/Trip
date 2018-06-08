@@ -728,7 +728,7 @@ span.input-group-btn {
 }
 .toggl_view {
 	width: 75%;
-	height:610px;
+	height:100%;
 	position: absolute;
 	background:#fff;
 	z-index: 100;
