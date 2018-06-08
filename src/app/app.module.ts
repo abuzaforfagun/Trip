@@ -1,3 +1,4 @@
+import { SuggestiontravelPage } from './../pages/suggestiontravel/suggestiontravel';
 import { SuggestionPage } from './../pages/suggestion/suggestion';
 import { DestinationPage } from './../pages/destination/destination';
 import { SignupPage } from './../pages/signup/signup';
@@ -21,7 +22,8 @@ import { DestinationProvider } from '../providers/destination/destination';
     SigninPage,
     SignupPage,
     DestinationPage,
-    SuggestionPage
+    SuggestionPage,
+    SuggestiontravelPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import { DestinationProvider } from '../providers/destination/destination';
     SigninPage,
     SignupPage,
     DestinationPage,
-    SuggestionPage
+    SuggestionPage,
+    SuggestiontravelPage
   ],
   providers: [
     StatusBar,
