@@ -1,18 +1,30 @@
-<!--
-  Generated template for the SignupPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>signup</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
-<ion-content padding>
-
-</ion-content>
+<div class="signup">
+    <div class="col-md-4 col-sm-4 col-md-offset-4">
+      <div class="content_div_signup">
+        <div class="overlay1">
+          <div class="logo">
+           <img class="img-responsive" src="assets/imgs/logo.png" alt=" Logo Icon">
+         </div>
+         <div class="sin_log">
+           <div class="sign_up">
+             <button class="btn btn-sign-up"> Sign Up  </button>
+           </div>
+           <div class="sign_in">
+             <button type="button" class="btn btn-sign deactive">Sign In</button>
+           </div>
+         </div>
+        </div>
+         <div class="txt_filed">
+           <br>
+           <form  class="form-group" action="#">
+            <input class="form-control" type="text" name="fname" placeholder="Full Name">
+            <input class="form-control" type="email" name="lname" placeholder="E-mail Address">
+            <input class="form-control" type="password" name="lname" placeholder="Password">
+            <input class="form-control" type="password" name="lname" placeholder="Re-type Password">
+            <button class="btn btn-default btn_submit btn-block">Submit</button>
+          </form>
+         </div>
+         <p class="align-center">Already have an account? <strong><span class="link" (click) = "clickSignIn()" >Sign In</span></strong></p>
+      </div> 
+    </div>
+  </div>

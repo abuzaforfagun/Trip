@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { SigninPage } from '../signin/signin';
 
 /**
  * Generated class for the SignupPage page.
@@ -21,4 +22,12 @@ export class SignupPage {
     console.log('ionViewDidLoad SignupPage');
   }
 
+  clickSignIn(){
+    setTimeout(() => {
+      this.navCtrl.push(SigninPage).then(() => {
+        const index = this.navCtrl.getActive().index;
+        this.navCtrl.remove(0, index);
+      });
+    }, 2000);
+  }
 }
