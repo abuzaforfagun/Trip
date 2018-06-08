@@ -1,3 +1,4 @@
+import { SignupPage } from './../pages/signup/signup';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -14,7 +15,8 @@ import { SigninPage } from '../pages/signin/signin';
     MyApp,
     HomePage,
     SplashscreenPage,
-    SigninPage
+    SigninPage,
+    SignupPage
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,8 @@ import { SigninPage } from '../pages/signin/signin';
     MyApp,
     HomePage,
     SplashscreenPage,
-    SigninPage
+    SigninPage,
+    SignupPage
   ],
   providers: [
     StatusBar,

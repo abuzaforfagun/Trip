@@ -17,13 +17,16 @@ import { NavController } from 'ionic-angular';
 export class SplashscreenPage {
 
   constructor(public navCtrl: NavController) {
+    setTimeout(() => {
+      this.navCtrl.push(SigninPage).then(() => {
+        const index = this.navCtrl.getActive().index;
+        this.navCtrl.remove(0, index);
+      });
+    }, 2000);
   }
 
   ionViewDidLoad() {
-    setTimeout(() => {
-      this.navCtrl.push(SigninPage);
-      
-    }, 2000);
+    
   }
 
 }
