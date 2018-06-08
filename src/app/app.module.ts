@@ -1,3 +1,4 @@
+import { DestinationPage } from './../pages/destination/destination';
 import { SignupPage } from './../pages/signup/signup';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -16,7 +17,8 @@ import { SigninPage } from '../pages/signin/signin';
     HomePage,
     SplashscreenPage,
     SigninPage,
-    SignupPage
+    SignupPage,
+    DestinationPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,8 @@ import { SigninPage } from '../pages/signin/signin';
     HomePage,
     SplashscreenPage,
     SigninPage,
-    SignupPage
+    SignupPage,
+    DestinationPage
   ],
   providers: [
     StatusBar,
