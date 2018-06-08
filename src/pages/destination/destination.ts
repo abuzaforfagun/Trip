@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { DestinationProvider } from '../../providers/destination/destination';
 
 /**
  * Generated class for the DestinationPage page.
@@ -8,16 +9,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-destination',
   templateUrl: 'destination.html',
 })
-export class DestinationPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+export class DestinationPage implements OnInit{
+  rootDestination: any[];
+  constructor(public navCtrl: NavController, public navParams: NavParams, private destinationService: DestinationProvider) {
   }
 
+  ngOnInit(){
+    this.rootDestination = this.destinationService.getRootPlaces();
+  }
   ionViewDidLoad() {
     console.log('ionViewDidLoad DestinationPage');
   }

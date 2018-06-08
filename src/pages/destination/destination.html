@@ -11,10 +11,8 @@
             <div class="select_group">
             <select>
               <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-              <option value="volvo">Volvo</option>
-              <option value="saab">Saab</option>
-              <option value="opel">Opel</option>
-              <option value="audi">Audi</option>
+              <option *ngFor = "let name of rootDestination" [value] = "name">{{name}}</option>
+              
             </select>
             </div>
              <div class="input-group">

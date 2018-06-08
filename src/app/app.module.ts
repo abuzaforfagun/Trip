@@ -10,6 +10,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { SplashscreenPage } from '../pages/splashscreen/splashscreen';
 import { SigninPage } from '../pages/signin/signin';
+import { DestinationProvider } from '../providers/destination/destination';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { SigninPage } from '../pages/signin/signin';
   ],
   providers: [
     StatusBar,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    DestinationProvider
   ]
 })
 export class AppModule {}
