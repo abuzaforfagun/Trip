@@ -1,4 +1,6 @@
+import { SigninPage } from './../signin/signin';
 import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
 
 
 /**
@@ -14,11 +16,14 @@ import { Component } from '@angular/core';
 })
 export class SplashscreenPage {
 
-  constructor() {
+  constructor(public navCtrl: NavController) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SplashscreenPage');
+    setTimeout(() => {
+      this.navCtrl.push(SigninPage);
+      
+    }, 2000);
   }
 
 }
