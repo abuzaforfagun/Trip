@@ -13,6 +13,7 @@ import { HomePage } from '../pages/home/home';
 import { SplashscreenPage } from '../pages/splashscreen/splashscreen';
 import { SigninPage } from '../pages/signin/signin';
 import { DestinationProvider } from '../providers/destination/destination';
+import { SidebarComponent } from '../components/sidebar/sidebar';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { DestinationProvider } from '../providers/destination/destination';
     SignupPage,
     DestinationPage,
     SuggestionPage,
-    SuggestiontravelPage
+    SuggestiontravelPage,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +40,8 @@ import { DestinationProvider } from '../providers/destination/destination';
     SignupPage,
     DestinationPage,
     SuggestionPage,
-    SuggestiontravelPage
+    SuggestiontravelPage,
+    SidebarComponent
   ],
   providers: [
     StatusBar,
