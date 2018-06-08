@@ -1,3 +1,4 @@
+import { SuggestionPage } from './../suggestion/suggestion';
 import { Component, OnInit } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { DestinationProvider } from '../../providers/destination/destination';
@@ -27,6 +28,10 @@ export class DestinationPage implements OnInit{
   }
   ionViewDidLoad() {
     console.log('ionViewDidLoad DestinationPage');
+  }
+
+  clickSuggestMe(){
+    this.navCtrl.push(SuggestionPage);
   }
 
 }

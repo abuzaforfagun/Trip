@@ -1,3 +1,4 @@
+import { SuggestionPage } from './../pages/suggestion/suggestion';
 import { DestinationPage } from './../pages/destination/destination';
 import { SignupPage } from './../pages/signup/signup';
 import { BrowserModule } from '@angular/platform-browser';
@@ -19,7 +20,8 @@ import { DestinationProvider } from '../providers/destination/destination';
     SplashscreenPage,
     SigninPage,
     SignupPage,
-    DestinationPage
+    DestinationPage,
+    SuggestionPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import { DestinationProvider } from '../providers/destination/destination';
     SplashscreenPage,
     SigninPage,
     SignupPage,
-    DestinationPage
+    DestinationPage,
+    SuggestionPage
   ],
   providers: [
     StatusBar,
