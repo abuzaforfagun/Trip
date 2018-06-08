@@ -326,13 +326,14 @@ span.icon {
 	float: left;
 }
 .top_bar span.back_icon {
-	width: 30px;
-	height: 30px;
+	
 	margin-top: 15px;
 	margin-left: 15px;
 	font-size:36px;
 	float: left;
 	 color:#fff;
+	 padding-left: 10px;
+	 padding-right: 10px;
 }
 .top_bar h3 {
     width: 260px;
