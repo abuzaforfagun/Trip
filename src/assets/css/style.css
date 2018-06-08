@@ -788,7 +788,7 @@ ul.menu_list li {
 .search_date::after {
     content: ">";
     width: 50px;
-    height: 49px;
+    height: 50px;
     background: #74b82c;
     position: absolute;
     right: 0px;
@@ -797,12 +797,14 @@ ul.menu_list li {
     color: #fff;
 	font-weight: 600;
 	font-size: 24px;
-	padding: 10px 16px;
+	padding-right: 10px;
+	line-height: 50px;
+	text-align: right
 }
 .search_date::before {
     content: "<";
     width: 50px;
-    height: 49px;
+    height: 50px;
     background: #74b82c;
     position: absolute;
     left: 0px;
@@ -810,7 +812,8 @@ ul.menu_list li {
     color: #fff;
 	font-weight: 600;
 	font-size: 24px;
-	padding: 10px;
+	padding-left: 10px;
+	line-height: 50px;
 }
 .icon .fa {
     color: #fff;
@@ -819,3 +822,4 @@ ul.menu_list li {
 }
 .ion-page{background: white;}
 .col-md-offset-4{padding:0}
+.suggestion_container{padding-left: 20px; padding-right: 20px;}
