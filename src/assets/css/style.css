@@ -25,6 +25,8 @@ span.link{color: #488aff}
 	background:url(../imgs/splash.jpg) no-repeat;
 	position:fixed;
 	top:0;
+	left: 0;
+	right: 0;
 	background-size: contain;
 	z-index: -1;
 }
