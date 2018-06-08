@@ -1,3 +1,4 @@
+import { DestinationPage } from './../destination/destination';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { SignupPage } from '../signup/signup';
@@ -22,8 +23,23 @@ export class SigninPage {
     console.log('ionViewDidLoad SigninPage');
   }
 
+  clickSignUp(){
+    setTimeout(() => {
+      this.navCtrl.push(SignupPage).then(() => {
+        const index = this.navCtrl.getActive().index;
+        this.navCtrl.remove(0, index);
+      });
+    }, 2000);
+    
+  }
+
   clickSignIn(){
-    this.navCtrl.push(SignupPage);
+    setTimeout(() => {
+      this.navCtrl.push(DestinationPage).then(() => {
+        const index = this.navCtrl.getActive().index;
+        this.navCtrl.remove(0, index);
+      });
+    }, 2000);
   }
 
 }
