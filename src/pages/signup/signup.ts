@@ -23,11 +23,9 @@ export class SignupPage {
   }
 
   clickSignIn(){
-    setTimeout(() => {
-      this.navCtrl.push(SigninPage).then(() => {
-        const index = this.navCtrl.getActive().index;
-        this.navCtrl.remove(0, index);
-      });
-    }, 2000);
+    this.navCtrl.push(SigninPage).then(() => {
+      const index = this.navCtrl.getActive().index;
+      this.navCtrl.remove(0, index);
+    });
   }
 }

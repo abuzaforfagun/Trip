@@ -24,22 +24,17 @@ export class SigninPage {
   }
 
   clickSignUp(){
-    setTimeout(() => {
-      this.navCtrl.push(SignupPage).then(() => {
-        const index = this.navCtrl.getActive().index;
-        this.navCtrl.remove(0, index);
-      });
-    }, 2000);
-    
+    this.navCtrl.push(SignupPage).then(() => {
+      const index = this.navCtrl.getActive().index;
+      this.navCtrl.remove(0, index);
+    });
   }
 
   clickSignIn(){
-    setTimeout(() => {
-      this.navCtrl.push(DestinationPage).then(() => {
-        const index = this.navCtrl.getActive().index;
-        this.navCtrl.remove(0, index);
-      });
-    }, 2000);
+    this.navCtrl.push(DestinationPage).then(() => {
+      const index = this.navCtrl.getActive().index;
+      this.navCtrl.remove(0, index);
+    });
   }
 
 }
