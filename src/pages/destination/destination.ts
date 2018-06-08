@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { DestinationProvider } from '../../providers/destination/destination';
+// import * as $ from 'jquery'
+declare let $: any;
 
 /**
  * Generated class for the DestinationPage page.
@@ -20,6 +22,8 @@ export class DestinationPage implements OnInit{
 
   ngOnInit(){
     this.rootDestination = this.destinationService.getRootPlaces();
+    $( "#fromDatePicker" ).datepicker();
+    $( "#toDatePicker" ).datepicker();
   }
   ionViewDidLoad() {
     console.log('ionViewDidLoad DestinationPage');
