@@ -31,5 +31,7 @@ export class SuggestionPage implements OnInit {
 	  });
   }
   
-
+  clickBackToDestination(){
+    this.navCtrl.pop();
+  }
 }
