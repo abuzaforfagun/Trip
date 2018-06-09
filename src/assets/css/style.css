@@ -725,16 +725,6 @@ span.input-group-btn {
 .plane_text p {
 	font-size:14px;
 }
-.toggl_view {
-	width: 75%;
-	height:100%;
-	position: absolute;
-	background:#fff;
-	z-index: 100;
-	box-shadow: 0px 1px 15px #999;
-	-webkit-box-shadow: 0px 1px 15px #999;
-	display:none;
-}
 /**/
 .top_section {
     width: 100%;
