@@ -347,9 +347,9 @@ span.icon {
     width: 30px;
     height: 30px;
     margin-top: 25px;
-    margin-left: 10px;
+    margin-right: 15px;
     font-size: 25px;
-    float: left;
+    float: right;
     color:#fff;
     position: relative;
 }
