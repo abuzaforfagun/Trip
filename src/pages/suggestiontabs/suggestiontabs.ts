@@ -26,15 +26,16 @@ export class SuggestiontabsPage  implements OnInit{
   
   
   ngOnInit(): void {
-    $( "#datepicker3" ).datepicker();
-    // $( "#toDatePicker" ).datepicker();
-
-    // $( "#datepicker3" ).datepicker();
-    $( ".toggle_bar" ).click(function () {
-      $( ".toggl_view" ).animate({
-        width: "toggle"
+    setTimeout(() => {
+      $( "#datepicker3" ).datepicker();
+    
+      $( ".toggle_bar" ).click(function () {
+        $( ".toggl_view" ).animate({
+          width: "toggle"
+        });
       });
-    });
+    }, 1000);
+    
   }
 
   clickBackToDestination() {

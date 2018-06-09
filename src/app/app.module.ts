@@ -17,6 +17,7 @@ import { SidebarComponent } from '../components/sidebar/sidebar';
 import { SuggestiontabsPage } from '../pages/suggestiontabs/suggestiontabs';
 import { SuggestioneventsPage } from '../pages/suggestionevents/suggestionevents';
 import { SuggestionresturantsPage } from '../pages/suggestionresturants/suggestionresturants';
+import { SuggestiontravelProvider } from '../providers/suggestiontravel/suggestiontravel';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,8 @@ import { SuggestionresturantsPage } from '../pages/suggestionresturants/suggesti
   providers: [
     StatusBar,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    DestinationProvider
+    DestinationProvider,
+    SuggestiontravelProvider
   ]
 })
 export class AppModule {}

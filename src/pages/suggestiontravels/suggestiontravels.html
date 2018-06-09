@@ -13,109 +13,21 @@
 <ion-content padding>
     <div class="suggestion_container">
         <div class="div10"></div>
-    
-        <div class="src_result1">
-          <img class="img-responsive" src="assets/imgs/img1.jpg" alt="">
-          <div class="bot_tom">
-            <ul>
-              <li class="pull-left">
-                <b>From </b>8:30 AM
-                <b>to </b>8:00 PM</li>
-              <li class="pull-right">
-                <b>20 Mins</b> by Taxi</li>
-            </ul>
-          </div>
-        </div>
-    
-        <div class="div10"></div>
-    
-        <div class="src_result1">
-          <img class="img-responsive" src="assets/imgs/img1.jpg" alt="">
-          <div class="bot_tom">
-            <ul>
-              <li class="pull-left">
-                <b>From </b>8:30 AM
-                <b>to </b>8:00 PM</li>
-              <li class="pull-right">
-                <b>20 Mins</b> by Taxi</li>
-            </ul>
-          </div>
-        </div>
-    
-        <div class="div10"></div>
-    
-        <div class="src_result1">
-          <img class="img-responsive" src="assets/imgs/img1.jpg" alt="">
-          <div class="bot_tom">
-            <ul>
-              <li class="pull-left">
-                <b>From </b>8:30 AM
-                <b>to </b>8:00 PM</li>
-              <li class="pull-right">
-                <b>20 Mins</b> by Taxi</li>
-            </ul>
-          </div>
-        </div>
-    
-        <div class="div10"></div>
-    
-        <div class="src_result1">
-          <img class="img-responsive" src="assets/imgs/img1.jpg" alt="">
-          <div class="bot_tom">
-            <ul>
-              <li class="pull-left">
-                <b>From </b>8:30 AM
-                <b>to </b>8:00 PM</li>
-              <li class="pull-right">
-                <b>20 Mins</b> by Taxi</li>
-            </ul>
-          </div>
-        </div>
-    
-        <div class="div10"></div>
-    
-        <div class="src_result1">
-          <img class="img-responsive" src="assets/imgs/img1.jpg" alt="">
-          <div class="bot_tom">
-            <ul>
-              <li class="pull-left">
-                <b>From </b>8:30 AM
-                <b>to </b>8:00 PM</li>
-              <li class="pull-right">
-                <b>20 Mins</b> by Taxi</li>
-            </ul>
-          </div>
-        </div>
-    
-        <div class="div10"></div>
-    
-        <div class="src_result1">
-          <img class="img-responsive" src="assets/imgs/img1.jpg" alt="">
-          <div class="bot_tom">
-            <ul>
-              <li class="pull-left">
-                <b>From </b>8:30 AM
-                <b>to </b>8:00 PM</li>
-              <li class="pull-right">
-                <b>20 Mins</b> by Taxi</li>
-            </ul>
-          </div>
-        </div>
-    
-        <div class="div10"></div>
-    
-        <div class="src_result1">
-          <img class="img-responsive" src="assets/imgs/img1.jpg" alt="">
-          <div class="bot_tom">
-            <ul>
-              <li class="pull-left">
-                <b>From </b>8:30 AM
-                <b>to </b>8:00 PM</li>
-              <li class="pull-right">
-                <b>20 Mins</b> by Taxi</li>
-            </ul>
-          </div>
-        </div>
+      
+          <div class="src_result1"  *ngFor="let suggestion of list">
+              <img class="img-responsive" src="{{suggestion.image}}" alt="">
+              <div class="bot_tom">
+                <ul>
+                  <li class="pull-left">
+                    <b>From </b>{{suggestion.start_time}}
+                    <b>to </b>{{suggestion.end_time}}</li>
+                  <li class="pull-right">
+                    <b>20 Mins</b> by Taxi</li>
+                </ul>
+              </div>
+            </div>
+      
+        
         <div class="clearfix"></div>
       </div>
       

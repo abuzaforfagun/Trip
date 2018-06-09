@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { SuggestiontravelProvider } from './../../providers/suggestiontravel/suggestiontravel';
+import { Component, OnInit } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
@@ -12,9 +13,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   selector: 'page-suggestiontravels',
   templateUrl: 'suggestiontravels.html',
 })
-export class SuggestiontravelsPage {
+export class SuggestiontravelsPage implements OnInit {
+  
+  list: any[];
+  constructor(public navCtrl: NavController, public navParams: NavParams, private listProvider: SuggestiontravelProvider) {
+  }
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  ngOnInit(): void {
+    this.list = this.listProvider.getList();
   }
 
   ionViewDidLoad() {
