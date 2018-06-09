@@ -1,6 +1,5 @@
 import { SuggestiontravelsPage } from './../pages/suggestiontravels/suggestiontravels';
 import { SuggestionhotelsPage } from './../pages/suggestionhotels/suggestionhotels';
-import { SuggestiontravelPage } from './../pages/suggestiontravel/suggestiontravel';
 import { SuggestionPage } from './../pages/suggestion/suggestion';
 import { DestinationPage } from './../pages/destination/destination';
 import { SignupPage } from './../pages/signup/signup';
@@ -29,10 +28,10 @@ import { SuggestionresturantsPage } from '../pages/suggestionresturants/suggesti
     SignupPage,
     DestinationPage,
     SuggestionPage,
-    SuggestiontravelPage,
+    
     SidebarComponent,
     SuggestiontabsPage,
-    SuggestiontravelPage,
+    
     SuggestiontravelsPage,
     SuggestioneventsPage,
     SuggestionresturantsPage,
@@ -51,10 +50,10 @@ import { SuggestionresturantsPage } from '../pages/suggestionresturants/suggesti
     SignupPage,
     DestinationPage,
     SuggestionPage,
-    SuggestiontravelPage,
+    
     SidebarComponent,
     SuggestiontabsPage,
-    SuggestiontravelPage,
+    
     SuggestiontravelsPage,
     SuggestioneventsPage,
     SuggestionresturantsPage,
