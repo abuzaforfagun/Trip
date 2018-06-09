@@ -401,7 +401,7 @@ span.icon {
 .search_date .form-control {
     border: none;
     height: 50px;
-    width: 220px;
+    width: 100%;
     margin-left: 51px;
 }
 .src_result {

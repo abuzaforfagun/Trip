@@ -25,7 +25,7 @@ export class SuggestiontabsPage {
   
   
   ngOnInit(): void {
-    
+    $("#datepicker3").datepicker();
     $(".toggle_bar").click(function () {
       $(".toggl_view").animate({
         width: "toggle"
