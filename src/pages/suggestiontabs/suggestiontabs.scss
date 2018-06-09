@@ -1,0 +1,11 @@
+page-suggestiontabs {
+    .travel_suggestion{margin-top: 80px}
+    .fullheight, .travel_screen{height: calc(100% - 10px);}
+    .travel_screen{padding-bottom: 100px;}
+    .travel_suggestion ion-tab{margin-top: 50px;}
+    .serach_container{margin-top: 50px;}
+    .tabbar{background: #74b82c!important; border: none!important; padding-left: 10px; padding-right: 10px;}
+    .tabbar a{color:white!important;}
+    .tab-button-text{font-weight: bold; font-size: 1.6em;}
+    .tabs-ios .tab-button[aria-selected=true]{border-bottom: 3px solid #FFEB3B}
+}

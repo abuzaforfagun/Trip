@@ -2,6 +2,7 @@ import { SuggestionPage } from './../suggestion/suggestion';
 import { Component, OnInit } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { DestinationProvider } from '../../providers/destination/destination';
+import { SuggestiontabsPage } from '../suggestiontabs/suggestiontabs';
 // import * as $ from 'jquery'
 declare let $: any;
 
@@ -31,7 +32,7 @@ export class DestinationPage implements OnInit{
   }
 
   clickSuggestMe(){
-    this.navCtrl.push(SuggestionPage);
+    this.navCtrl.push(SuggestiontabsPage);
   }
 
 }

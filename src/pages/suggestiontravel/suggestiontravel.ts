@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+declare var $: any;
+
 @Component({
   selector: 'page-suggestiontravel',
   templateUrl: 'suggestiontravel.html',

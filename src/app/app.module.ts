@@ -1,3 +1,5 @@
+import { SuggestiontravelsPage } from './../pages/suggestiontravels/suggestiontravels';
+import { SuggestionhotelsPage } from './../pages/suggestionhotels/suggestionhotels';
 import { SuggestiontravelPage } from './../pages/suggestiontravel/suggestiontravel';
 import { SuggestionPage } from './../pages/suggestion/suggestion';
 import { DestinationPage } from './../pages/destination/destination';
@@ -14,6 +16,9 @@ import { SplashscreenPage } from '../pages/splashscreen/splashscreen';
 import { SigninPage } from '../pages/signin/signin';
 import { DestinationProvider } from '../providers/destination/destination';
 import { SidebarComponent } from '../components/sidebar/sidebar';
+import { SuggestiontabsPage } from '../pages/suggestiontabs/suggestiontabs';
+import { SuggestioneventsPage } from '../pages/suggestionevents/suggestionevents';
+import { SuggestionresturantsPage } from '../pages/suggestionresturants/suggestionresturants';
 
 @NgModule({
   declarations: [
@@ -25,7 +30,13 @@ import { SidebarComponent } from '../components/sidebar/sidebar';
     DestinationPage,
     SuggestionPage,
     SuggestiontravelPage,
-    SidebarComponent
+    SidebarComponent,
+    SuggestiontabsPage,
+    SuggestiontravelPage,
+    SuggestiontravelsPage,
+    SuggestioneventsPage,
+    SuggestionresturantsPage,
+    SuggestionhotelsPage
   ],
   imports: [
     BrowserModule,
@@ -41,7 +52,13 @@ import { SidebarComponent } from '../components/sidebar/sidebar';
     DestinationPage,
     SuggestionPage,
     SuggestiontravelPage,
-    SidebarComponent
+    SidebarComponent,
+    SuggestiontabsPage,
+    SuggestiontravelPage,
+    SuggestiontravelsPage,
+    SuggestioneventsPage,
+    SuggestionresturantsPage,
+    SuggestionhotelsPage
   ],
   providers: [
     StatusBar,
