@@ -6,6 +6,8 @@ page-suggestiontabs {
     .serach_container{margin-top: 50px;}
     .tabbar{background: #74b82c!important; border: none!important; padding-left: 10px; padding-right: 10px;}
     .tabbar a{color:white!important;}
-    .tab-button-text{font-weight: bold; font-size: 1.6em;}
-    .tabs-ios .tab-button[aria-selected=true]{border-bottom: 3px solid #FFEB3B}
+    .tab-button-text{font-weight: bold; font-size: 1.6em}
+    .tab-button[aria-selected=true]{border-bottom: 3px solid #FFEB3B!important}
+    .tab-button{border-bottom: 3px solid transparent;}
+    
 }

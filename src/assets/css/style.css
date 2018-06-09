@@ -814,3 +814,4 @@ ul.menu_list li {
 .ion-page{background: white;}
 .col-md-offset-4{padding:0}
 .suggestion_container{padding-left: 20px; padding-right: 20px;}
+a:focus, a:hover{text-decoration: none!important}
