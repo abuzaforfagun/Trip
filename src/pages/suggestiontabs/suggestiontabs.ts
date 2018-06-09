@@ -1,6 +1,9 @@
+import { SuggestionresturantsPage } from './../suggestionresturants/suggestionresturants';
+import { SuggestionhotelsPage } from './../suggestionhotels/suggestionhotels';
 import { SuggestiontravelsPage } from './../suggestiontravels/suggestiontravels';
 import { Component } from '@angular/core';
 import { IonicPage, NavController } from 'ionic-angular';
+import { SuggestioneventsPage } from '../suggestionevents/suggestionevents';
 
 declare var $: any;
 
@@ -13,9 +16,9 @@ declare var $: any;
 export class SuggestiontabsPage {
 
   suggestiontravelsRoot = SuggestiontravelsPage
-  suggestionhotelsRoot = 'SuggestionhotelsPage'
-  suggestionresturantsRoot = 'SuggestionresturantsPage'
-  suggestioneventsRoot = 'SuggestioneventsPage'
+  suggestionhotelsRoot = SuggestionhotelsPage
+  suggestionresturantsRoot = SuggestionresturantsPage
+  suggestioneventsRoot = SuggestioneventsPage
 
 
   constructor(public navCtrl: NavController) {}
