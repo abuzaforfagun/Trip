@@ -1,6 +1,5 @@
 import { SuggestiontravelsPage } from './../pages/suggestiontravels/suggestiontravels';
 import { SuggestionhotelsPage } from './../pages/suggestionhotels/suggestionhotels';
-import { SuggestionPage } from './../pages/suggestion/suggestion';
 import { DestinationPage } from './../pages/destination/destination';
 import { SignupPage } from './../pages/signup/signup';
 import { BrowserModule } from '@angular/platform-browser';
@@ -27,7 +26,7 @@ import { SuggestionresturantsPage } from '../pages/suggestionresturants/suggesti
     SigninPage,
     SignupPage,
     DestinationPage,
-    SuggestionPage,
+    
     
     SidebarComponent,
     SuggestiontabsPage,
@@ -49,7 +48,7 @@ import { SuggestionresturantsPage } from '../pages/suggestionresturants/suggesti
     SigninPage,
     SignupPage,
     DestinationPage,
-    SuggestionPage,
+    
     
     SidebarComponent,
     SuggestiontabsPage,
